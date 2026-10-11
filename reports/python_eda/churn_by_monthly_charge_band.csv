@@ -1,0 +1,5 @@
+monthly_charge_band,total_customers,churned_customers,retained_customers,avg_monthly_charges,churn_rate_pct
+Up to 35,1735,189,1546,22.03,10.89
+Above 35 to 70,1725,413,1312,54.84,23.94
+Above 70 to 100,2681,1014,1667,84.7,37.82
+Above 100,902,253,649,106.67,28.05

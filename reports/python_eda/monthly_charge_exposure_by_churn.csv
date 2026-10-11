@@ -1,0 +1,3 @@
+Churn,total_customers,sum_monthly_charges,avg_monthly_charges,avg_total_charges,share_of_current_monthly_charges_pct
+Yes,1869,139130.85,74.44,1531.8,30.5
+No,5174,316985.75,61.27,2555.34,69.5

@@ -1,0 +1,13 @@
+Contract,PaymentMethod,total_customers,churned_customers,retained_customers,avg_monthly_charges,churn_rate_pct
+Month-to-month,Electronic check,1850,994,856,74.99,53.73
+Month-to-month,Bank transfer (automatic),589,201,388,69.09,34.13
+Month-to-month,Credit card (automatic),543,178,365,67.68,32.78
+Month-to-month,Mailed check,893,282,611,46.05,31.58
+One year,Electronic check,347,64,283,79.1,18.44
+One year,Credit card (automatic),398,41,357,67.97,10.3
+One year,Bank transfer (automatic),391,38,353,67.48,9.72
+One year,Mailed check,337,23,314,44.31,6.82
+Two year,Electronic check,168,13,155,84.34,7.74
+Two year,Bank transfer (automatic),564,19,545,65.01,3.37
+Two year,Credit card (automatic),581,13,568,64.42,2.24
+Two year,Mailed check,382,3,379,38.59,0.79

@@ -1,0 +1,11 @@
+field_name,category_value,total_customers,churned_customers,retained_customers,avg_monthly_charges,churn_rate_pct
+gender,Female,3488,939,2549,65.2,26.92
+gender,Male,3555,930,2625,64.33,26.16
+SeniorCitizen,0,5901,1393,4508,61.85,23.61
+SeniorCitizen,1,1142,476,666,79.82,41.68
+Partner,No,3641,1200,2441,61.95,32.96
+Partner,Yes,3402,669,2733,67.78,19.66
+Dependents,No,4933,1543,3390,67.0,31.28
+Dependents,Yes,2110,326,1784,59.52,15.45
+PaperlessBilling,No,2872,469,2403,51.99,16.33
+PaperlessBilling,Yes,4171,1400,2771,73.55,33.57

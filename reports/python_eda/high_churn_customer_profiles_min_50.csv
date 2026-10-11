@@ -1,0 +1,27 @@
+observed_churn_rate_rank,Contract,InternetService,OnlineSecurity,TechSupport,total_customers,churned_customers,retained_customers,avg_monthly_charges,churn_rate_pct
+1,Month-to-month,Fiber optic,No,No,1524,925,599,84.65,60.7
+2,Month-to-month,Fiber optic,No,Yes,250,106,144,93.94,42.4
+3,Month-to-month,DSL,No,No,641,260,381,45.42,40.56
+4,Month-to-month,Fiber optic,Yes,No,272,108,164,90.22,39.71
+5,Month-to-month,Fiber optic,Yes,Yes,82,23,59,99.37,28.05
+6,Month-to-month,DSL,No,Yes,216,52,164,54.61,24.07
+7,Month-to-month,DSL,Yes,No,243,57,186,52.98,23.46
+8,One year,Fiber optic,No,No,186,39,147,95.03,20.97
+9,One year,Fiber optic,No,Yes,131,27,104,100.47,20.61
+10,Month-to-month,DSL,Yes,Yes,123,25,98,62.08,20.33
+11,One year,Fiber optic,Yes,Yes,95,19,76,104.36,20.0
+12,Month-to-month,No,No internet service,No internet service,524,99,425,20.41,18.89
+13,One year,Fiber optic,Yes,No,127,19,108,98.36,14.96
+14,One year,DSL,No,No,113,16,97,54.76,14.16
+15,Two year,Fiber optic,No,No,55,7,48,96.04,12.73
+16,One year,DSL,No,Yes,127,15,112,62.92,11.81
+17,Two year,Fiber optic,No,Yes,111,10,101,102.95,9.01
+18,One year,DSL,Yes,Yes,199,14,185,65.23,7.04
+19,One year,DSL,Yes,No,131,8,123,59.82,6.11
+20,Two year,Fiber optic,Yes,Yes,197,11,186,109.04,5.58
+21,Two year,Fiber optic,Yes,No,66,3,63,101.07,4.55
+22,One year,No,No internet service,No internet service,364,9,355,20.82,2.47
+23,Two year,DSL,Yes,Yes,403,7,396,72.9,1.74
+24,Two year,DSL,Yes,No,81,1,80,64.47,1.23
+25,Two year,DSL,No,Yes,110,1,109,68.28,0.91
+26,Two year,No,No internet service,No internet service,638,5,633,21.78,0.78

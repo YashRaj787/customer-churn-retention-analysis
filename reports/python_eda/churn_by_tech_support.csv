@@ -1,0 +1,4 @@
+TechSupport,total_customers,churned_customers,retained_customers,avg_monthly_charges,churn_rate_pct
+No,3473,1446,2027,74.59,41.64
+Yes,2044,310,1734,80.68,15.17
+No internet service,1526,113,1413,21.08,7.4

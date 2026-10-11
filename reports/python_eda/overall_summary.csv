@@ -1,0 +1,2 @@
+total_customers,churned_customers,retained_customers,churn_rate_pct,retention_rate_pct,missing_total_charges,unique_customer_ids
+7043,1869,5174,26.54,73.46,11,7043

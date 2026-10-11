@@ -1,0 +1,4 @@
+OnlineSecurity,total_customers,churned_customers,retained_customers,avg_monthly_charges,churn_rate_pct
+No,3498,1461,2037,75.69,41.77
+Yes,2019,295,1724,78.84,14.61
+No internet service,1526,113,1413,21.08,7.4

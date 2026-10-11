@@ -1,0 +1,12 @@
+check,result
+Rows,7043
+Columns,21
+Unique customer IDs,7043
+Duplicate customer IDs,0
+Churned customers,1869
+Retained customers,5174
+Missing TotalCharges,11
+Missing values outside TotalCharges,0
+Zero-tenure customers,11
+Negative MonthlyCharges,0
+Negative non-missing TotalCharges,0

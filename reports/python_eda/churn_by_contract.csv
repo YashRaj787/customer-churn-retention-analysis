@@ -1,0 +1,4 @@
+Contract,total_customers,churned_customers,retained_customers,avg_monthly_charges,churn_rate_pct
+Month-to-month,3875,1655,2220,66.4,42.71
+One year,1473,166,1307,65.05,11.27
+Two year,1695,48,1647,60.77,2.83

@@ -1,0 +1,24 @@
+service,service_status,total_customers,churned_customers,retained_customers,avg_monthly_charges,churn_rate_pct
+PhoneService,No,682,170,512,42.03,24.93
+PhoneService,Yes,6361,1699,4662,67.2,26.71
+MultipleLines,No,3390,849,2541,54.2,25.04
+MultipleLines,No phone service,682,170,512,42.03,24.93
+MultipleLines,Yes,2971,850,2121,82.04,28.61
+OnlineSecurity,No,3498,1461,2037,75.69,41.77
+OnlineSecurity,No internet service,1526,113,1413,21.08,7.4
+OnlineSecurity,Yes,2019,295,1724,78.84,14.61
+OnlineBackup,No,3088,1233,1855,71.94,39.93
+OnlineBackup,No internet service,1526,113,1413,21.08,7.4
+OnlineBackup,Yes,2429,523,1906,83.08,21.53
+DeviceProtection,No,3095,1211,1884,70.6,39.13
+DeviceProtection,No internet service,1526,113,1413,21.08,7.4
+DeviceProtection,Yes,2422,545,1877,84.82,22.5
+TechSupport,No,3473,1446,2027,74.59,41.64
+TechSupport,No internet service,1526,113,1413,21.08,7.4
+TechSupport,Yes,2044,310,1734,80.68,15.17
+StreamingTV,No,2810,942,1868,65.39,33.52
+StreamingTV,No internet service,1526,113,1413,21.08,7.4
+StreamingTV,Yes,2707,814,1893,88.74,30.07
+StreamingMovies,No,2785,938,1847,65.43,33.68
+StreamingMovies,No internet service,1526,113,1413,21.08,7.4
+StreamingMovies,Yes,2732,818,1914,88.48,29.94
