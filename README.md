@@ -1,10 +1,36 @@
 # Customer Churn & Retention Analysis
 
-An end-to-end data analytics project investigating customer churn patterns using Excel for initial data auditing, Python for reproducible cleaning and exploratory data analysis, PostgreSQL for SQL analysis, and Power BI for interactive reporting.
+## About
+
+This project explores why some customer groups leave a telecom service more often than others. I used Excel to audit the data, Python to clean and explore it, PostgreSQL to analyze churn patterns, and Power BI to build an interactive dashboard.
+
+The analysis describes patterns and associations in the dataset. It does not prove that any one factor causes churn.
+
+## Dashboard Preview
+
+The Power BI report contains three pages. Screenshots are included below so visitors can preview the report directly on GitHub.
+
+### 1. Customer Overview
+
+Shows the overall customer KPIs and churn rates by contract type, tenure, internet service, and payment method.
+
+![Customer Overview dashboard](screenshots/customer_overview.png)
+
+### 2. Service Drivers
+
+Compares churn rates by online security, technical support, and number of optional services.
+
+![Service Drivers dashboard](screenshots/service_drivers.png)
+
+### 3. Customer Risk & Economics
+
+Explores churn across monthly-charge bands and demographic groups. It includes slicers for contract, payment method, and internet service.
+
+![Customer Risk & Economics dashboard](screenshots/customer_risk_economics.png)
 
 ## Project Objective
 
-Identify customer groups with different observed churn rates and translate the results into useful questions for retention analysis. The project is descriptive: it identifies patterns and associations, not proof that any particular factor causes churn.
+Identify customer groups with different observed churn rates and turn the results into useful questions for retention analysis.
 
 ## Dataset
 
@@ -15,31 +41,30 @@ Identify customer groups with different observed churn rates and translate the r
 - **Retained customers:** 5,174
 - **Overall churn rate:** 26.54%
 
-### Data quality and cleaning decisions
+### Data Quality and Cleaning Decisions
 
-- Audited row and column counts, duplicate customer IDs, blank values, categorical values, numeric ranges, and cross-field relationships before cleaning.
+- Audited row and column counts, duplicate customer IDs, blank values, category values, numeric ranges, and relationships between fields before cleaning.
 - Found 11 blank or whitespace-only `TotalCharges` values. All 11 records had `tenure = 0` and `Churn = No`.
-- Preserved these values as missing instead of replacing them with zero or deleting those customers.
+- Kept these values missing instead of replacing them with zero or deleting the customer records.
 - Cleaned surrounding whitespace and converted `TotalCharges` to numeric in a separate processed dataset.
 - Kept the raw CSV unchanged.
 - Validated that the processed dataset contains 7,043 rows, 21 columns, and 7,043 unique customer IDs.
 
-
 ## Tools Used
 
-- **Excel:** initial audit, missing-value review, categorical-value audit, numeric-range audit, and cross-field checks
+- **Excel:** initial audit, missing-value review, category checks, numeric-range checks, and cross-field checks
 - **Python:** pandas for reproducible cleaning and exploratory analysis; Matplotlib for charts
-- **PostgreSQL:** grouped churn analysis, combined-segment analysis, customer profiles, add-on counts, charge exposure, and final validation
-- **Power BI:** interactive report and DAX measures
+- **PostgreSQL:** grouped churn analysis, combined-segment analysis, customer profiles, add-on counts, charge analysis, and final validation
+- **Power BI:** interactive reporting and DAX measures
 
 ## Key Findings
 
 ### Overall
 
-- **26.54%** of customers churned in the dataset.
-- The dataset contains 1,869 churned and 5,174 retained customers.
+- **26.54%** of customers churned.
+- The dataset contains 1,869 churned customers and 5,174 retained customers.
 
-### Contract type
+### Contract Type
 
 | Contract | Customers | Churned | Observed churn rate |
 |---|---:|---:|---:|
@@ -56,7 +81,7 @@ Identify customer groups with different observed churn rates and translate the r
 | 25–48 months | 1,594 | 325 | 20.39% |
 | 49–72 months | 2,239 | 213 | 9.51% |
 
-### Internet service
+### Internet Service
 
 | Internet service | Customers | Churned | Observed churn rate |
 |---|---:|---:|---:|
@@ -64,15 +89,16 @@ Identify customer groups with different observed churn rates and translate the r
 | DSL | 2,421 | 459 | 18.96% |
 | No internet service | 1,526 | 113 | 7.40% |
 
-### Other observed patterns
+### Other Observed Patterns
 
-- Customers without technical support had a 41.64% churn rate, versus 15.17% for customers with support.
-- Customers without online security had a 41.77% churn rate, versus 14.61% for customers with online security.
+- Customers without technical support had a 41.64% churn rate, compared with 15.17% for customers with support.
+- Customers without online security had a 41.77% churn rate, compared with 14.61% for customers with online security.
 - Electronic-check customers had a 45.29% churn rate, higher than the other recorded payment methods.
-- Churn was 54.61% for the combined group of month-to-month contract and Fiber optic internet service.
-- Churn by monthly charge band was not monotonic: 10.89% up to 35, 23.94% above 35 to 70, 37.82% above 70 to 100, and 28.05% above 100.
+- The combined group of month-to-month contract and Fiber optic internet service had a 54.61% churn rate.
+- Churn by monthly-charge band was not consistent: 10.89% up to 35, 23.94% above 35 to 70, 37.82% above 70 to 100, and 28.05% above 100.
+- Customers with 0–6 optional services had observed churn rates of 21.41%, 45.76%, 35.82%, 27.37%, 22.30%, 12.43%, and 5.28%, respectively.
 
-These are observed group-level associations. They should not be interpreted as causal effects. Contract type, tenure, service availability, charges, and customer characteristics may overlap and should be investigated together before recommending interventions.
+These are observed group-level associations, not proof of cause and effect. Contract type, tenure, service availability, charges, and customer characteristics may overlap and should be investigated together before recommending changes.
 
 ## Power BI Report
 
@@ -91,8 +117,15 @@ customer-churn-retention-analysis/
 ├── data/
 │   ├── raw/
 │   │   └── telco_customer_churn_raw.csv
-│   └── processed/
-│       └── telco_customer_churn_clean.csv
+│   ├── processed/
+│   │   └── telco_customer_churn_clean.csv
+│   └── telco_customer_churn_audit.xlsx
+├── evidence/
+│   ├── powerbi_screenshot/
+│   │   ├── customer_overview.png
+│   │   ├── service_drivers.png
+│   │   └── customer_risk_economics.png
+│   └── SQL and Python evidence images
 ├── python/
 │   ├── 01_data_cleaning.py
 │   └── 02_exploratory_analysis.py
@@ -102,13 +135,17 @@ customer-churn-retention-analysis/
 │   └── python_eda/
 │       ├── summary CSV files
 │       └── charts/
+├── screenshots/
+│   ├── customer_overview.png
+│   ├── service_drivers.png
+│   └── customer_risk_economics.png
 └── powerbi/
     └── customer_churn_retention.pbix
 ```
 
 ## How to Reproduce
 
-1. Install Python and the dependencies:
+1. Install Python and the required libraries:
 
    ```bash
    py -m pip install pandas matplotlib
@@ -126,8 +163,8 @@ customer-churn-retention-analysis/
    py python/02_exploratory_analysis.py
    ```
 
-4. Create the PostgreSQL database and table using the included SQL setup scripts; import `data/processed/telco_customer_churn_clean.csv` and run the numbered analysis queries.
-5. Open the Power BI file. If refresh is needed on another computer, update the CSV source path to the processed file in this repository.
+4. Create the PostgreSQL database and table using the included SQL setup scripts. Import `data/processed/telco_customer_churn_clean.csv`, then run the numbered analysis queries.
+5. Open the Power BI file. If a refresh is required on another computer, update the CSV source path to the processed file in this repository.
 
 ## Limitations
 
@@ -137,4 +174,5 @@ customer-churn-retention-analysis/
 - No predictive churn model has been built as part of this project.
 
 ## Dataset Source
+
 The dataset used in this project is available from the [IBM Telco Customer Churn dataset repository](https://github.com/IBM/telco-customer-churn-on-icp4d/blob/master/data/Telco-Customer-Churn.csv).
